@@ -1,0 +1,661 @@
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #5EB1D4, #369DC9);
+    min-height: 100vh;
+    padding: 5px;
+}
+
+ul{
+    list-style: none;
+}
+i{
+    line-height: 0;
+}
+br{
+    display: none;
+}
+
+.fonts h1{
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #fff;
+    margin:0;
+}
+.fonts h3{
+    font-size: 30px;
+    line-height: 38px;
+    color: #17a2b8;
+}
+.fonts p {
+    font-size: 16px;
+    color: #202020;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form.fonts {
+    width: 100%;
+}
+.fonts select,
+.fonts select option,
+.fonts input {
+    display: inline-block;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: #369DC9;
+    border: 1px solid;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-indent: 1ch;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.btn-crud input {
+    width: 49%;
+    color: #fff;
+    border: none;
+}
+.fonts select:marker{
+    padding:10px;
+}
+
+
+.flex {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header.header-adm {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+.logo.aside-left {
+    display: none;
+}
+
+.navigation .menu {
+    width: 50px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.navigation .menu span {
+    display: inline-block;
+    background: #fff;
+    height: 2px;
+    width: 30px;
+    margin: 5px 0;
+}
+.navigation .right {
+    display: none;
+}
+.navigation .right i {
+    display: none;
+}
+
+.navigation .perfil.flex h2 {color: white;font-weight: bold;font-size: 22px;margin: 0;}
+
+.navigation .perfil.flex i {display: none;}
+
+.navigation .perfil.flex i:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+main.content {
+    padding: 30px 0;
+}
+section.dashboard {
+    background: #f2f4f8;
+    border-radius: 20px;
+    padding: 30px;
+}
+nav.aside-left a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    text-decoration: none;
+}
+nav.aside-left.width {
+    overflow-x: scroll;
+}
+nav.aside-left ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    width: 800px;
+}
+
+section.dashboard {
+    background: #f2f4f8;
+    border-radius: 20px;
+    padding: 30px;
+}
+section.dashboard.fonts h1 {
+    color: #369DC9;
+}
+input.search:after {
+    content: "";
+    background: red;
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+    display: inline-block;
+    width: 10px;
+    height: 100px;
+    padding: 20px;
+}
+
+input.search {
+    position: relative;
+}
+.cards {
+    background: #fff;
+    padding: 30px;
+    margin: 5px 0;
+    border-radius: 20px;
+    width: 48%;
+}
+.grafismo-item i {
+    display: inline-block;
+    border: 9px double #369DC9;
+    padding: 30px;
+    border-radius: 50%;
+}
+/* form */
+.title-table {
+    padding: 30px 0 20px;
+}
+.table-bd {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    overflow-x: scroll;
+}
+
+.table-bd .table td {
+    border: none;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+.table-bd .table td:first-child {
+    border-left: none;
+}
+.table-bd .table tr:nth-of-type(even) {
+    background: #DBF6FB;
+}
+.table-bd .table {
+    margin: 0;
+    width: 1000px;
+}
+.table-bd .table tr:last-child td {
+    border-bottom: none;
+}
+.btn-crud.flex a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 10px 40px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    border: 1px solid;
+    margin: 30px;
+}
+/* Modal */
+.modalForm .modal-header {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border: none;
+    padding: 0;
+}
+.modalForm .modal-header button {
+    outline: none;
+    opacity: 1;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.modalForm .modal-header span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 40px;
+    background: #17a2b8;
+    opacity: 1;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.modalForm .modal-body {
+    padding: 40px 30px 10px;
+}
+
+@media(min-width:1024px) {
+    nav.aside-left.width {
+        overflow-x: hidden;
+    }    
+    nav.aside-left.width ul {
+        width: 100%;
+    }
+    section.dashboard.fonts {
+        display: flex;
+        flex-flow: wrap;
+        min-height: 65vh;
+    }
+    .fonts select,
+    .fonts select option,
+    .fonts input {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .form.fonts input,
+    .form.fonts select
+    {
+        width: 49%;
+    }
+    .form.fonts .btn-crud input {
+        width: 24%;
+        color: #fff;
+        border: none;
+        text-indent: 0;
+    }
+    nav.aside-left a {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media(min-width:1280px){
+	.table-bd .table {
+	    width: 100%;
+	}
+}
+
+
+/****
+Login form 
+********************/
+.superreal_loginform {
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+.superreal_loginform input[type="submit"] {
+    background: #57aed2;
+    width: auto;
+    padding: 10px 30px;
+    color: white;
+    text-align: center;
+}
+.navigation.flex .left {
+    width: 50%;
+    display: flex;
+    justify-content: unset;
+}
+.navigation.flex .right {
+    width: 40%;
+    display:flex;
+}
+.perfil.flex {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.perfil.flex a {
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.btns-actio-administrador {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.btns-actio-administrador a {
+    text-decoration: none;
+    background: #57add2;
+    min-width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 -3px 0 inset rgb(0 0 0 / 18%);
+}
+.superreal_table {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.superreal_table table button {
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: #57aed2;
+    border: none;
+    margin-left: 10px;
+}
+
+.superreal_table table form {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.superreal_table table form select {
+    margin: 0;
+    max-width: 100px;
+    display: block;
+}
+.desc h1 {
+    color: red;
+    font-size: 22px;
+}
+.superreal_loginform.bigformao {
+    max-width: 100%;
+}
+
+.unica-acao {
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    background: ghostwhite;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 3px 1px rgb(0 0 0 / 10%);
+}
+
+.title-cardacao h2 {
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 34px;
+    border-bottom: 1px solid;
+}
+
+.cards-carousel-anuncio {
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.card-carros {
+    width: 320px;
+    padding: 18px;
+    background: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.covercarro {
+    width: 100%;
+    height: 180px;
+    background: red;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.desc-carro h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #57aed2;
+    margin: 0;
+}
+
+.desc-carro span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.desc-carro a {
+    display: inline-block;
+    width: 100%;
+    background: #59aed3;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.desc-carro {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.cards_visitas {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.unicapill-visita {
+    background: white;
+    padding: 20px;
+    width: 30%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.unicapill-visita h3 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.unicapill-visita a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #2360bb;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.bnts-acoes {display: flex;flex-direction: column;}
+
+.bnts-acoes a {
+    display: inline-block;
+    padding: 5px 20px;
+    background: red;
+    text-align: center;
+    color: white;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+.bnts-acoes a:nth-of-type(1) {
+    background: yellow;
+    color: black;
+}
+.menu-funcionario ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-funcionario ul li a {
+    display: inline-block;
+    min-width: 200px;
+    background: #5aafd3;
+    padding: 10px 20px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    color: wheat;
+    box-shadow: inset 0 -3px 0 rgb(0 0 0 / 24%);
+}
+.banner-classificado {
+    display: flex;
+    flex-flow: wrap;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.sidetext-banner-classificado {
+    background: white;
+    padding: 0 60px;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.sidepicbanner {
+    width: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sidetext-banner-classificado h1 {
+    color: black;
+    font-weight: bold;
+}
+
+span.ksbanner {
+    font-size: 32px;
+}
+
+.sidetext-banner-classificado a {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 0 0 0;
+    background: #59aed2;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset 0 -3px 0 black;
+}
+html {
+    padding: 0;
+}
+
+body.bodyhome {
+    background: whitesmoke;
+}
+
+.bodyhome header nav ul li a {
+    font-weight: bold;
+    color: black;
+    padding-left: 30px;
+}
+
+.bodyhome header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+body.bodyhome header .row {
+    justify-content: space-between;
+}
+
+body.bodyhome header {
+    padding: 20px 0;
+}
+
+span.alpisbrand {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 49px;
+}
+
+.bodyhome header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-lista-carros h3 {
+    font-weight: bold;
+}
+
+.unicoveiculo.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.coverveiculo {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.desc-veiculo h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.detalhes p br {
+    display: block;
+}
+
+p {}
+
+.detalhes p {
+    font-size: 14px;
+}
+
+.detalhes a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+
+.desc-veiculo a {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    background: #59aed2;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    box-shadow: inset 0 -3px 0 black;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.owl-nav button {
+    width: 40px;
+    height: 40px;
+    background: #59aed2 !important;
+    margin: 0 10px;
+    border-radius: 100px;
+    color: white !important;
+}
